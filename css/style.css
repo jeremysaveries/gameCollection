@@ -1,9 +1,46 @@
+body{
+       box-sizing: border-box 
+}
 
+
+
+
+.login__item__inscription{
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+    margin: 1em 
+}
+
+.login__item{
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+    margin: 1em
+}
+
+
+
+
+
+
+.containers{
+  
+    
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2em;
+}
+
+.submenu{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);  
+}
 
 .submenu__item--current{
     text-decoration: none;
      margin-right: 1em;
-   
+     grid-column: 2/3
 }
 .submenu__item{
     color: rgb(0, 0, 0);
@@ -12,18 +49,6 @@
 
 
 
-}.containers{
-    
-    
-    font-family: "Bangers", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size:2em;
-
 }
 
-.login__item{
-    color: rgb(0, 0, 0);
-    text-decoration: none; 
-    margin: 1em
-}
+
