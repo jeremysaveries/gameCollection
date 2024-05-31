@@ -13,33 +13,22 @@ max-width: 10em;
 
 
 
-
-
-
 .containers{
-  
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-    font-family: "Bangers", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size:2em;
+    background-color: black;
 }
 
 
-.login__item__inscription{
-    color: rgb(0, 0, 0);
-    text-decoration: none; 
-    margin: 1em 
-}
 
 
-.login__item{
-    color: rgb(0, 0, 0);
-    text-decoration: none; 
-    margin: 1em
+
+
+.nav{
+   
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
 }
+
 
 
 
@@ -48,15 +37,39 @@ max-width: 10em;
      margin-right: 1em;
      grid-column: 2/3;
      font-size: 1rem;
-     
+     color: white;
 }
 .submenu__item{
     color: rgb(0, 0, 0);
     text-decoration: none; 
-    margin: 1em
-
-
+    margin: 1em;
+    font-size: 1rem;
+    color: white;
 
 }
 
+.search_barre{
+ font-size: 1rem;
+};
 
+.login{
+    font-size: 1rem;
+}
+
+
+.login__item__conexion{
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+    margin: 1em;
+    color: white;
+    
+}
+
+
+
+.login__item__inscription{
+    color: white;
+    text-decoration: none; 
+    margin: 1em;
+    
+}
