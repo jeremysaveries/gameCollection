@@ -14,7 +14,7 @@ max-width: 10em;
 
 
 .containers{
-    background-color: black;
+    background-color: #272727
 }
 
 
@@ -72,4 +72,33 @@ max-width: 10em;
     text-decoration: none; 
     margin: 1em;
     
+}
+
+.header_middle{
+    background-image: radial-gradient(circle farthest-corner at  10% 10%, #0c2d59, #6f5884, #bc9ac3);
+    color: white;
+}
+.header_middle_list{
+   list-style: none;
+}
+
+.header_middle_couv{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+}
+
+.header_middle_couv_img{
+    grid-column: 1 / 3;   
+}
+
+
+.header_middle_button_insc{
+    text-decoration: none;
+    color: white;
+    border:  1px solid black;
+    border-radius: 10px;
+    height: 100px; 
+    width: 200px;
+    padding: 10px;
+    background-color: #272727;
 }
