@@ -233,3 +233,14 @@ max-width: 10em;
   .card-11 { background-image: url('/img/genre/str.png'); 
 
 }
+footer{
+  padding-top: 2em;
+}
+.footer_container{
+  background-color:#272727 ;
+}
+
+.footer_text{
+  color: white;
+  z-index: 3;
+}
