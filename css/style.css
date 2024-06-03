@@ -200,37 +200,37 @@ max-width: 10em;
     font-size: 14px;
   }
 
-  .card-1 { background-image: url('/img/genre/fps.png');
+  .card-1 { background-image: url('/img/genre/fps.jpg');
     
  }
-  .card-2 { background-image: url('/img/genre/gestion.jpg');
+  .card-2 { background-image: url('/img/genre/gestion.jpeg');
     
 }
   .card-3 { background-image: url('/img/genre/horror.jpg'); 
    
 }
-  .card-4 { background-image: url('/img/genre/indé.jpg'); 
+  .card-4 { background-image: url('/img/genre/inde.jpeg'); 
     
 }
   .card-5 { background-image: url('/img/genre/mmo.jpg'); 
    
 }
-  .card-6 { background-image: url('/img/genre/moba.jpg'); 
+  .card-6 { background-image: url('/img/genre/moba.jpeg'); 
    
 }
-  .card-7 { background-image: url('/img/genre/plateforme.png'); 
+  .card-7 { background-image: url('/img/genre/plateforme.jpg'); 
    
 }
-  .card-8 { background-image: url('/img/genre/rpg.jpeg'); 
+  .card-8 { background-image: url('/img/genre/rpg.jpg'); 
    
 }
   .card-9 { background-image: url('/img/genre/simulation.jpg');
    
 }
-  .card-10 { background-image: url('/img/genre/sport.png');
+  .card-10 { background-image: url('/img/genre/sport.jpg');
     
 }
-  .card-11 { background-image: url('/img/genre/str.png'); 
+  .card-11 { background-image: url('/img/genre/str.jpg'); 
 
 }
 footer{
