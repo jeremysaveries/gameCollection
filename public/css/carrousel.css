@@ -1,0 +1,36 @@
+
+.card-carousel {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - 10px);
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 20px;
+  }
+  
+  .card-item {
+    width: 150px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    scroll-snap-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  .card-item:nth-child(1) {
+    background-image: url('/public/img/jackette/nouveauté/senuas-saga-hellblade-2-image.jpg')
+  }
+  
+  .card-item:nth-child(2) {
+    background-image: url('image2.jpg');
+  }
+  
+  .card-item:nth-child(3) {
+    background-image: url('image3.jpg');
+  }

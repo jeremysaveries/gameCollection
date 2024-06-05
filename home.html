@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>game collection </title>
-        <link rel="stylesheet" href="/public/css/reset.css">
+        <link rel="stylesheet" href="public/css/reset.css">
         <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/carrousel.css">
         <link rel="icon" href="./img/favicons/favicon-16x16.png" type="image/png">
     </head>
 
@@ -51,89 +52,28 @@
         </header> 
 
 <main class="main_container">
-    <div class="main_carrousel">
-        <a class="main_carrousel_title" href="">
-                <h2>nouveautés</h2>
-            </a>
-        
-    
-            <div class="carrousel-inner">
-              <div class="carrousel-item active">
-                <img src="image1.jpg" alt="Image 1">
-              </div>
-              <div class="carrousel-item">
-                <img src="image2.jpg" alt="Image 2">
-              </div>
-              <div class="carrousel-item">
-                <img src="image3.jpg" alt="Image 3">
-              </div>
-            </div>
-            <a class="carrousel-control-prev" role="button">
-              <span class="carrousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Précédent</span>
-            </a>
-            <a class="carrousel-control-next" role="button">
-              <span class="carrousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Suivant</span>
-            </a>
-    
-    </div>
-    <div class="main_carrousel_1">
-    
-        <a  class="main_carrousel_title1"href="">
-            <h2>jeux tendance</h2>
-        </a>
-    
-    
-        <div class="carrousel-inner">
-          <div class="carrousel-item active">
-            <img src="image1.jpg" alt="Image 1">
-          </div>
-          <div class="carrousel-item">
-            <img src="image2.jpg" alt="Image 2">
-          </div>
-          <div class="carrousel-item">
-            <img src="image3.jpg" alt="Image 3">
-          </div>
+  <section>
+    <h2>Nouveautés</h2>
+    <div class="card-carous-container">
+        <div class="card-item">
+          <span>hellblade 2</span>
+        <p>sortie le 21 mai 2024</p>
         </div>
-        <a class="carrousel-control-prev" role="button">
-          <span class="carrousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Précédent</span>
-        </a>
-        <a class="carrousel-control-next" role="button">
-          <span class="carrousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Suivant</span>
-        </a>
+      </div>
+  
     </div>
+
+    <!-- Ajoutez d'autres éléments .card-item ici -->
+  <div>
+    <a class="carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="carousel-next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
     
-    
-       <div class="main_carrousel_2">
-        <a class="main_carrousel_title2" href="">
-            <h2>jeux les plus ajoutés</h2>
-        </a>
-    
-        <div class="carrousel-inner">
-          <div class="carrousel-item active">
-            <img src="image1.jpg" alt="Image 1">
-          </div>
-          <div class="carrousel-item">
-            <img src="image2.jpg" alt="Image 2">
-          </div>
-          <div class="carrousel-item">
-            <img src="image3.jpg" alt="Image 3">
-          </div>
-        </div>
-        <a class="carrousel-control-prev" role="button">
-          <span class="carrousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Précédent</span>
-        </a>
-        <a class="carrousel-control-next" role="button">
-          <span class="carrousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Suivant</span>
-        </a>
-    </div>
-    
-   
+</section>
+  
+                
     <h2 class="card-title">Parcourir par genre </h2>
     <div class="card-container">
       <div class="card card-1">

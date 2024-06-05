@@ -128,25 +128,9 @@ max-width: 10em;
 }
 
 
-.main_carrousel_title{
-    text-decoration: none;
-    color: black;
+.card-title{
+  padding-left: 1em;
 }
-
-
-
-
-.main_carrousel_title1{
-    text-decoration: none;
-    color: black;
-}
-
-
-.main_carrousel_title2{
-    text-decoration: none;
-    color: black;
-}
-
 
 .card-container {
     
@@ -155,7 +139,7 @@ max-width: 10em;
     grid-template-rows: repeat(2, 100px);
     row-gap: 15px;
     column-gap: 60px;
-    
+    padding-right: 1em;
 }
   
   .card {
