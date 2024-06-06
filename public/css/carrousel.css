@@ -19,9 +19,25 @@
     scroll-snap-align: center;
     background-size: cover;
     background-position: center;
-    color: white;
+    display: grid;
+    align-items: end;
+    text-align: center;
+    
   }
+
+.text-card-item{
+  text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
   .card-item:nth-child(1) {
+   
     background-image: url('/public/img/jackette/nouveauté/ST.jpg')
   }
   
@@ -30,5 +46,15 @@
   }
   
   .card-item:nth-child(3) {
-    background-image: url('image3.jpg');
+    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
   }
+  .card-item:nth-child(4) {
+    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
+  }
+  .card-item:nth-child(5) {
+    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
+  }
+  .card-item:nth-child(6) {
+    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
+  }
+  

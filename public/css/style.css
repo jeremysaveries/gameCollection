@@ -54,9 +54,10 @@ max-width: 10em;
 
 .style-searchbarre{
   background-color: #272727;
-  color: white;
   border: none;
   border-bottom: 1px solid white;
+  color: white;
+  border-color: inherit;
 }
 
 .recherche{
