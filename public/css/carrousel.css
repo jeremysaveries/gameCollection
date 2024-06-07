@@ -39,20 +39,39 @@
   font-style: normal
 }
 
+.carousel-controls{
+  position: absolute;
+}
+
+.prev-btn{
+  width: 50px;
+  height: 225px;
+  color: white;
+  font-size: xx-large;
+  background-color: black;
+  opacity: 0.80;
+}
 
 
 
+.prev-btn2{
+  width: 50px;
+  height: 225px;
+  color: white;
+  font-size: xx-large;
+  background-color: black;
+  opacity: 0.80;
+}
 
 
+  
   .card-item:nth-child(1) {
-   
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg')
+    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
   }
   
   .card-item:nth-child(2) {
     background-image: url('/public/img/jackette/nouveauté/ST.jpg');
   }
-  
   .card-item:nth-child(3) {
     background-image: url('/public/img/jackette/nouveauté/ST.jpg');
   }
@@ -62,10 +81,15 @@
   .card-item:nth-child(5) {
     background-image: url('/public/img/jackette/nouveauté/ST.jpg');
   }
-  .card-item:nth-child(6) {
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
+   .card-item:nth-child(6) {
+   
+    background-image: url('/public/img/jackette/nouveauté/ST.jpg')
   }
-  
+   
+  .card-item:nth-child(7) {
+   
+    background-image: url('/public/img/jackette/nouveauté/ST.jpg')
+  }
 
 
 
