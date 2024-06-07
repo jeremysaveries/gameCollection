@@ -31,9 +31,12 @@
 
 .text-card-item{
   text-decoration: none;
-    color: white;
+    color: #808e9b;
     font-weight: bold;
-    text-shadow: black 10px 0 10px;
+    text-shadow: black 2px 2px 2px;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal
 }
 
 
