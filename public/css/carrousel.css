@@ -33,6 +33,7 @@
   text-decoration: none;
     color: white;
     font-weight: bold;
+    text-shadow: black 10px 0 10px;
 }
 
 
@@ -62,3 +63,96 @@
     background-image: url('/public/img/jackette/nouveauté/ST.jpg');
   }
   
+
+
+
+
+  .card-carous-container2{
+    display: grid;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 20px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(9, 200px);
+
+  }
+
+  .card-item2{
+    width: 150px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 10px 5px 10px black;
+    scroll-snap-align: center;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: end;
+    text-align: center;
+  }
+
+  .card-item2:nth-child(1){
+    background-image: url('/public/img/jackette/game-month/dlc\ elden\ .jpeg');
+  }
+  
+  .card-item2:nth-child(2){
+    background-image: url('/public/img/jackette/game-month/dlc\ elden\ .jpeg');
+  }
+
+  .card-item2:nth-child(3){
+    background-image: url('/public/img/jackette/game-month/dlc\ elden\ .jpeg');
+  }
+
+  .card-item2:nth-child(4){
+    background-image: url('/public/img/jackette/game-month/dlc\ elden\ .jpeg');
+  }
+
+
+
+
+
+
+
+  .card-carous-container3{
+    display: grid;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 20px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(9, 200px);
+
+  }
+
+  .card-item3{
+    width: 150px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 10px 5px 10px black;
+    scroll-snap-align: center;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: end;
+    text-align: center;
+  }
+
+  .card-item3:nth-child(1){
+    background-image: url('/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg');
+  }
+  
+  .card-item3:nth-child(2){
+    background-image: url('/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg');
+  }
+
+  .card-item3:nth-child(3){
+    background-image: url('/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg');
+  }
+
+  .card-item3:nth-child(4){
+    background-image: url('/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg');
+  }
