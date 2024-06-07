@@ -15,7 +15,7 @@
     height: 225px;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 5px 10px black;
     scroll-snap-align: center;
     background-size: cover;
     background-position: center;
@@ -24,6 +24,10 @@
     text-align: center;
     
   }
+
+
+
+
 
 .text-card-item{
   text-decoration: none;
