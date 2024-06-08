@@ -1,163 +1,116 @@
 .img__titre{
-max-width: 10em;
-}
-
-.containers{
- background-color: #272727
-}
-
-.nav{
-
-display: grid;
-grid-template-columns: repeat(4,1fr);
-grid-template-rows: 1fr;
-}
-
-
-.submenu__item--current{
- text-decoration: none;
-  margin-right: 1em;
-  grid-column: 2/3;
-  font-size: 1rem;
-  color: white;
-}
-
-.submenu__item{
- color: rgb(0, 0, 0);
- text-decoration: none; 
- margin: 1em;
- font-size: 1rem;
- color: white;
-
-}
-
-.search_barre{
-font-size: 1rem;
-};
-
-.style-searchbarre{
-background-color: #272727;
-border: none;
-border-bottom: 1px solid white;
-color: white;
-border-color: inherit;
-}
-
-.recherche{
-background-color: #272727;
-color: white;
-}
-
-
-.login{
- font-size: 1rem;
-}
-
-
-.login__item__conexion{
- color: rgb(0, 0, 0);
- text-decoration: none; 
- margin: 1em;
- color: white;
- 
-}
-
-
-.login__item__inscription{
- color: white;
- text-decoration: none; 
- margin: 1em;
- 
-}
-
-.header_middle_couv{
- display: grid;
- grid-template-columns: repeat(4, 2fr);
-}
-
-
-
-.header_middle_couv_img{
- grid-column: 1 / 3;   
-
-}
-
-
-
-
-
-.header_middle{
- background-image: radial-gradient(circle farthest-corner at  10% 10%, #0c2d59, #6f5884, #bc9ac3);
- color: white;
-}
-
-.header_middle_title{
- padding-left: 1.5em;
-}
-
-
-.header_middle_list{
-list-style: none;
-grid-row: 1 / 5;
-grid-column: 1 / 3;
-font-size: larger;
-}
-
-
-
-
-
-
-.header_middle_button_insc{
- text-decoration: none;
- color: white;
- border:  1px solid black;
- border-radius: 10px;
- height: 100px; 
- width: 200px;
- padding: 10px;
- background-color: #272727;
-}
-
-
-.gameImg {
-
+    max-width: 10em;
+  }
+  
+  .containers{
+    background-color: #272727;
+  }
+  
+  .nav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+  .submenu__item--current{
+    text-decoration: none;
+    margin-right: 1em;
+    grid-column: 2/3;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .submenu__item{
+    text-decoration: none; 
+    margin: 1em;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .style-searchbarre{
+    background-color: #272727;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  
+  .login{
+    font-size: 1rem;
+  }
+  
+  .login__item__conexion,
+  .login__item__inscription{
+    text-decoration: none; 
+    margin: 1em;
+    color: white;
+  }
+  
+  .header_middle_couv{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+  }
+  
+  .header_middle_couv_img{
+    grid-column: 1 / 3;   
+  }
+  
+  .header_middle{
+    background-image: radial-gradient(circle farthest-corner at 10% 10%, #0c2d59, #6f5884, #bc9ac3);
+    color: white;
+  }
+  
+  .header_middle_title{
+    padding-left: 1.5em;
+  }
+  
+  .header_middle_list{
+    list-style: none;
+    grid-row: 1 / 5;
+    grid-column: 1 / 3;
+    font-size: larger;
+  }
+  
+  .header_middle_button_insc{
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100px; 
+    width: 200px;
+    padding: 10px;
+    background-color: #272727;
+  }
+  
+  .gameImg{
     width: 800px;
     height: 500px;
-}
-
-
-
-
-footer{
-padding-top: 2em;
-}
-.footer_container{
-background-color:#272727 ;
-}
-
-.footer_text{
-color: white;
-z-index: 3;
-}
-
-
-.titreDescription {
-    
+  }
+  
+  footer{
+    padding-top: 2em;
+  }
+  
+  .footer_container{
+    background-color:#272727;
+  }
+  
+  .footer_text{
+    color: white;
+    z-index: 3;
+  }
+  
+  .titreDescription{
     text-align: center;
-}
-
-.ImgCarousel {
-
+  }
+  
+  .ImgCarousel{
     margin-top: 5em;
     margin-left: 5em;
     background-color: antiquewhite;
     max-width: 50%;
-}
-
-.formChoice {
-
+  }
+  
+  .formChoice{
     background-color: aqua;
     width: 40%;
-    
-}
+  }
+  
