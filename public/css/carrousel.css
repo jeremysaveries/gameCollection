@@ -1,185 +1,67 @@
-
-.card-carous-container {
-    display: grid;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 20px;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(9, 200px);
-  }
-  
-  .card-item {
-    width: 150px;
-    height: 225px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 10px 5px 10px black;
-    scroll-snap-align: center;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    align-items: end;
-    text-align: center;
-    
-  }
-
-
-
-
-
-.text-card-item{
-  text-decoration: none;
-    color: #808e9b;
-    font-weight: bold;
-    text-shadow: black 2px 2px 2px;
-    font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal
+.carousel-section {
+  position: relative;
+  padding-top: 2em;
 }
 
-.carousel-controls{
-  position: absolute;
+.carousel-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Colonnes pour les boutons et le conteneur d'images */
+
+  overflow: hidden;
 }
 
-.prev-btn{
+.carousel-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / 7); /* Ajustez la valeur en fonction du nombre d'images */
+  gap: 20px; /* Ajustez l'espacement entre les images */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  scroll-snap-align: center;
+  width: 150px; /* Ajustez la largeur des images */
+  height: 225px; /* Ajustez la hauteur des images */
+  border-radius: 8px;
+   
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 10px 5px 10px black;
+}
+
+.carousel-btn {
+  font-size: 24px;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+ ; /* Placer les boutons au-dessus des images */
+}
+
+.prev-btn {
   width: 50px;
   height: 225px;
-  color: white;
-  font-size: xx-large;
-  background-color: black;
-  opacity: 0.80;
+  justify-self: start; /* Aligner le bouton précédent à gauche */
+   z-index: 1;
 }
 
-
-
-.next-btn{
+.next-btn {
   width: 50px;
   height: 225px;
-  color: white;
-  font-size: xx-large;
-  background-color: black;
-  opacity: 0.80;
+  justify-self: end; /* Aligner le bouton suivant à droite */
+  z-index: 1;
+  
 }
 
 
+
+
   
-  .card-item:nth-child(1) {
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
-  }
-  
-  .card-item:nth-child(2) {
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
-  }
-  .card-item:nth-child(3) {
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
-  }
-  .card-item:nth-child(4) {
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
-  }
-  .card-item:nth-child(5) {
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg');
-  }
-   .card-item:nth-child(6) {
-   
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg')
-  }
-   
-  .card-item:nth-child(7) {
-   
-    background-image: url('/public/img/jackette/nouveauté/ST.jpg')
-  }
-
-
-
-
-  .card-carous-container2{
-    display: grid;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 20px;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(9, 200px);
-
-  }
-
-  .card-item2{
-    width: 150px;
-    height: 225px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 10px 5px 10px black;
-    scroll-snap-align: center;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    align-items: end;
-    text-align: center;
-  }
-
-  .card-item2:nth-child(1){
-    background-image: url('/public/img/jackette/game-month/dlc\ elden\ .jpeg');
-  }
-  
-  .card-item2:nth-child(2){
-    background-image: url('/public/img/jackette/game-month/dlc\ elden\ .jpeg');
-  }
-
-  .card-item2:nth-child(3){
-    background-image: url('/public/img/jackette/game-month/dlc\ elden\ .jpeg');
-  }
-
-  .card-item2:nth-child(4){
-    background-image: url('/public/img/jackette/game-month/dlc\ elden\ .jpeg');
-  }
-
-
-
-
-
-
-
-  .card-carous-container3{
-    display: grid;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 20px;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(9, 200px);
-
-  }
-
-  .card-item3{
-    width: 150px;
-    height: 225px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 10px 5px 10px black;
-    scroll-snap-align: center;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    align-items: end;
-    text-align: center;
-  }
-
-  .card-item3:nth-child(1){
-    background-image: url('/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg');
-  }
-  
-  .card-item3:nth-child(2){
-    background-image: url('/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg');
-  }
-
-  .card-item3:nth-child(3){
-    background-image: url('/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg');
-  }
-
-  .card-item3:nth-child(4){
-    background-image: url('/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg');
-  }
