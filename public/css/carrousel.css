@@ -28,21 +28,24 @@
    
 }
 
+
 .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 10px 5px 10px black;
+   z-index: 1;
 }
 
 .carousel-btn {
   font-size: 24px;
   padding: 8px 16px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.699);
   color: #fff;
   border: none;
   cursor: pointer;
+  z-index: 2;
  ; /* Placer les boutons au-dessus des images */
 }
 
@@ -50,14 +53,14 @@
   width: 50px;
   height: 225px;
   justify-self: start; /* Aligner le bouton précédent à gauche */
-   z-index: 1;
+   background-color: black;
 }
 
 .next-btn {
   width: 50px;
   height: 225px;
   justify-self: end; /* Aligner le bouton suivant à droite */
-  z-index: 1;
+  background-color: black;
   
 }
 

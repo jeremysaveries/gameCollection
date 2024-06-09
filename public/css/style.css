@@ -8,7 +8,9 @@ max-width: 10em;
 
 
 
-
+.burger-menu {
+  display: none;
+}
 
 
 
@@ -152,6 +154,7 @@ max-width: 10em;
 .card-title{
   padding-left: 1em;
   padding-top: 2em;
+
 }
 
 .card-container {
@@ -250,3 +253,11 @@ footer{
   color: white;
   z-index: 3;
 }
+
+
+
+
+
+
+
+
