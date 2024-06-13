@@ -32,6 +32,16 @@ max-width: 10em;
 }
 
 
+.submenu{
+  display: flex;
+}
+
+
+
+
+.menu-console-deroulant{
+  list-style: none;
+}
 
 
 .submenu__item--current{
@@ -40,7 +50,21 @@ max-width: 10em;
      grid-column: 2/3;
      font-size: 1rem;
      color: white;
+     list-style: none;
 }
+
+
+.menu-genre-deroulant{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
 .submenu__item{
     color: rgb(0, 0, 0);
     text-decoration: none; 
@@ -49,6 +73,20 @@ max-width: 10em;
     color: white;
 
 }
+
+
+
+
+
+
+
+.menu-genres li{
+ list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+
 
 .search_barre{
  font-size: 1rem;
