@@ -1,0 +1,61 @@
+.header_middle_console {
+    background-image: radial-gradient(circle farthest-corner at 10% 10%, #46aa54, #037716, #168a42);
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header_console_couv {
+    display: flex;
+    align-items: center;
+}
+
+.header_console_couv_img img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header_console_description {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.description_title {
+    font-weight: bolder;
+}
+
+.description_info {
+    color: white;
+}
+
+.title-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.console-title {
+    font-size: 2em;
+    color: #fff; /* Couleur blanche pour le titre des jeux */
+}
+
+.genre-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.genre-card-item {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.detail-card {
+    text-align: center;
+    color: white; /* Couleur du texte blanc pour les détails */
+    padding: 10px;
+}

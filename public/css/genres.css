@@ -1,53 +1,38 @@
-
-
-
-
-
-
-
-.genre-card-container{
+.genre-card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
 }
 
-
-
-.title-container{
+.title-container {
     padding-bottom: 1em;
     padding-top: 1em;
     padding-left: 1em;
 }
 
-.horreur-card-container{
+.genre-card-container-item {
     margin-left: 1em;
-    width: 150px; /* Ajustez la largeur des images */
-    height: 225px
-    
-
-
+    width: 150px;
+    height: 225px;
 }
 
-
-.horreur-card-item{
-
+.genre-card-item {
     width: 100%;
     height: 225px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 10px 5px 10px black;
- 
 }
 
-.detail-card{
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-margin-top: 1em;
-
+.detail-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
 }
-.detail-card-support{
+
+.detail-card-support {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -56,12 +41,11 @@ margin-top: 1em;
     gap: 5px;
 }
 
-.detail-card-support li{
+.detail-card-support li {
     margin: 0;
 }
 
-.detail-card-support img{
+.detail-card-support img {
     width: 32px;
     height: 32px;
 }
-
