@@ -2,29 +2,41 @@
     background-image: radial-gradient(circle farthest-corner at 10% 10%, #46aa54, #037716, #168a42);
     color: rgb(8, 8, 8);
     padding: 20px;
-    display: flex;
-    align-items: center;
+    text-align: center; /* Centrer le contenu */
+}
+
+.header_console_title {
+    font-size: 2em;
+    color: #fff; /* Couleur blanche pour le titre */
+    margin-bottom: 20px; /* Espacement en bas du titre */
 }
 
 .header_console_couv {
     display: flex;
     align-items: center;
+    
+    margin-top: 20px; 
+}
+
+.header_console_couv_img {
+    flex: 0 0 auto; /* Ne pas faire redimensionner l'image */
+    margin-right: 20px; /* Espacement à droite de l'image */
 }
 
 .header_console_couv_img img {
     width: 300px;
     height: auto;
-    margin-right: 20px;
 }
 
 .header_console_description {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: left; /* Aligner le texte à gauche */
 }
 
 .description_title {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .description_info {
@@ -38,12 +50,12 @@
 
 .console-title {
     font-size: 2em;
-    color: #fff; /* Couleur blanche pour le titre des jeux */
+    color: black; /* Couleur blanche pour le titre des jeux */
 }
 
 .genre-card-container {
     display: flex;
-    justify-content: center;
+    padding-left: 1em;
     flex-wrap: wrap;
 }
 
@@ -59,3 +71,4 @@
     color: white; /* Couleur du texte blanc pour les détails */
     padding: 10px;
 }
+

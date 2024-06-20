@@ -1,0 +1,36 @@
+.description_info{
+	color: black;
+}
+
+
+.main-jeux{
+	display: flex;
+    align-items: flex-start;
+}
+
+.text-container{
+padding-left: 1em;
+padding-right: 40em;
+order: 2;
+
+}
+
+.game_title{
+padding-left: 1em;
+}
+
+
+.game_button{
+	align-self: self-end;
+	order: 2;
+}
+.main_game_description{
+	padding-top: 1em;
+	list-style: none;
+}
+
+
+
+.game-card-container{
+	width: 100%;
+}
