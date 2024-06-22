@@ -3,34 +3,49 @@
 }
 
 
-.main-jeux{
-	display: flex;
-    align-items: flex-start;
-}
+
 
 .text-container{
-padding-left: 1em;
-padding-right: 40em;
-order: 2;
+display: flex;
+width: 80%;
 
 }
 
 .game_title{
 padding-left: 1em;
+font-size: xxx-large;
+    text-align: center;
 }
 
 
-.game_button{
-	align-self: self-end;
-	order: 2;
+.game_button_container{
+	padding-left: 2em;
+    align-self: center;
+	order: 3;
+	
 }
+
+
+
+.game_button_ajout{
+	background-color: black;
+    color: white;
+    width: 200px;
+    height: 40px;
+	
+}
+
 .main_game_description{
 	padding-top: 1em;
 	list-style: none;
+	order: 2;
+	padding-right: 1em;
 }
 
 
 
 .game-card-container{
 	width: 100%;
+	padding-left: 2em;
+    padding-top: 2em;
 }
