@@ -1,0 +1,19 @@
+{
+  "name": "jeremyfeatsid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "node": "^20.15.0",
+    "popper.js": "^1.16.1",
+    "prettier": "^3.3.2"
+  }
+}

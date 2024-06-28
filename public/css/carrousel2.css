@@ -1,0 +1,49 @@
+/* styles.css */
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+
+
+
+
+
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 100%; /* Set the width of carousel items */
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .custom-col {
+    padding: 0; /* Remove padding to bring cards closer together */
+    margin: 1em; /* Adjust margin to bring cards closer together */
+  }
+  
+  .card.custom-card {
+    width: 150px; /* Set the desired width for the card */
+    margin: 0; /* Remove margin for tighter spacing */
+    border: none; /* Remove border around cards */
+    background-color: transparent; /* Remove background color */
+  }
+  
+  .custom-img {
+    width: 150px; /* Set the desired width for the card images */
+    height: 225px; /* Set the desired height for the card images */
+    object-fit: cover; /* Ensure images cover the card without distortion */
+    display: block; /* Ensure the image is treated as a block element */
+    border-radius: 8px; /* Remove any border radius */
+    box-shadow: 10px 5px 10px black;
+  }
+  
+
+
