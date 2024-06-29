@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>game collection </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="public/css/reset.css">
+        <link rel="stylesheet" href="public/css/carrousel2.css">
         <link rel="stylesheet" href="public/css/style.css">
-        <link rel="stylesheet" href="public/css/carrousel.css">
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="icon" href="./img/favicons/favicon-16x16.png" type="image/png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,180 +95,166 @@
 </header>
 
 <main class="main_container">
-  <section class="carousel-section">
-    <h2>Prochainement</h2>
-    <p class="text-carrousel">Jeux attendus cette année</p>
-    <div class="carousel-wrapper" id="carousel_wrapper">
-      <button class="carousel-btn prev-btn",id="slider-prev">&#8249;</button>
-      <div class="carousel-container">
-     
-     
+  <h2 class="carousel-title">prochainement</h2>
+  <p class="carousel-description"> jeux attendu cette année</p>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="public/img/jackette/nouveauté/ST.jpg" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="carousel-item">
-          
-          <a href="">
-         <img class="carousel-img" src="/public/img/jackette/nouveauté/ST.jpg" alt="Image 1">
-             
-          </a>
+          <div class="d-flex justify-content-center">
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="carousel-item">
-          <a href="">
-
-            <img class="carousel-img" src="/public/img/jackette/nouveauté/ST.jpg" alt="Image 1">
-          </a>
-        </div>
-
-      <div class="carousel-item">
-          <a href="">
-
-            <img class="carousel-img" src="/public/img/jackette/nouveauté/ST.jpg" alt="Image 1">
-          </a>
-        </div>
-
-        <div class="carousel-item">
-          <a href="">
-
-            <img class="carousel-img" src="/public/img/jackette/nouveauté/ST.jpg" alt="Image 1">
-          </a>
-        </div>
-
-       <div class="carousel-item">
-          <a href="">
-
-            <img class="carousel-img" src="/public/img/jackette/nouveauté/ST.jpg" alt="Image 1">
-          </a>
-        </div>
-
-        <div class="carousel-item">
-          <a href="">
-
-            <img class="carousel-img" src="/public/img/jackette/nouveauté/ST.jpg" alt="Image 1">
-          </a>
-        </div>
-
-        <div class="carousel-item">
-          <a href="">
-
-            <img class="carousel-img"src="/public/img/jackette/nouveauté/ST.jpg" alt="Image 1">
-          </a>
-        </div>
-
-         <!-- Ajoute d'autres éléments .carousel-item ici -->
-       
       </div>
-      <button class="carousel-btn next-btn",id="slider-next">&#8250;</button>
+    
+    
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+     
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
     </div>
-  </section>
+    
+  
 
    
+    <h2 class="carousel-title">bientôt disponible</h2>
+    <p class="carousel-description"> attendu ce mois-ci </p>
   <section class="carousel-section">
-    <h2>bientôt disponible</h2>
-    <p class="text-carrousel">Jeux attendus ce mois </p>
-    <div class="carousel-wrapper">
-      <button cla#0984e3ss="carousel-btn prev-btn">&#8249;</button>
-      <div class="carousel-container">
-        
-        <div class="carousel-item">
-          <a href="#">
-          <img src="/public/img/jackette/game-month/dlc elden .jpeg" alt="Image 2">
-        </a>
-      </div>
-        
-        <div class="carousel-item">
-            <a href="#">
-            <img src="/public/img/jackette/game-month/dlc elden .jpeg" alt="Image 2">
-          </a>
+    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="public/img/jackette/game-month/dlc elden .jpeg" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="custom-col">
+              <div class="card custom-card">
+                <img src="https://via.placeholder.com/150x225" class="custom-img" alt="Card image cap">
+              </div>
+            </div>
+          
+
         </div>
 
-        <div class="carousel-item">
-          <a href="#">
-          <img src="/public/img/jackette/game-month/dlc elden .jpeg" alt="Image 2">
-        </a>
-      </div>
-
-      <div class="carousel-item">
-        <a href="#">
-        <img src="/public/img/jackette/game-month/dlc elden .jpeg" alt="Image 2">
-      </a>
-    </div>
-
-    <div class="carousel-item">
-      <a href="#">
-      <img src="/public/img/jackette/game-month/dlc elden .jpeg" alt="Image 2">
-    </a>
-  </div>
-
-  <div class="carousel-item">
-    <a href="#">
-    <img src="/public/img/jackette/game-month/dlc elden .jpeg" alt="Image 2">
-  </a>
-</div>
-        <!-- Ajoute d'autres éléments .carousel-item ici -->
-      </div>
-      <button class="carousel-btn next-btn">&#8250;</button>
-    </div>
-  </section>
-
-  <main class="main_container">
-    <section class="carousel-section">
-      <h2>jeux les plus ajouté<s></s></h2>
-      <p class="text-carrousel">jeux les plus ajouter depuis la création de la plateforme</p>
-      <div class="carousel-wrapper">
-        <button  class="carousel-btn prev-btn" >  &#8249;   </button>
-        <div class="carousel-container">
-          
-          
-          <div class="carousel-item">
-            <a href="#">
-              <img src="/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg" alt="Image 2">
-            </a>
-        </div>
-
+       
            
-        <div class="carousel-item">
-          <a href="#">
-            <img src="/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg" alt="Image 2">
-          </a>
-      </div>
-
-
-             
-          <div class="carousel-item">
-            <a href="#">
-              <img src="/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg" alt="Image 2">
-            </a>#0984e3
-        </div>
-
           
-        <div class="carousel-item">
-          <a href="#">
-            <img src="/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg" alt="Image 2">
-          </a>
-      </div>
-
-
-          
-      <div class="carousel-item">
-        <a href="#">
-          <img src="/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg" alt="Image 2">
+        
+      
+    
+    
+        <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="next">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+     
+        <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="Prev">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
         </a>
     </div>
-
-
-           
-    <div class="carousel-item">
-      <a href="#">
-        <img src="/public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg" alt="Image 2">
-      </a>
-  </div>
-
-          <!-- Ajoute d'autres éléments .carousel-item ici -->
-        </div>
-        <button class="carousel-btn next-btn">&#8250; </button>
-      </div>
-    </section>
   
-        
+    </main>    
         
      
 
@@ -277,40 +263,40 @@
   
        <section>
 
-         <h2 class="card-title">Parcourir par genre </h2>
-         <div class="card-container">
-           <div class="card card-1">
-             <a href="./genreFps.html" class="card_name">FPS</a>
+         <h2 class="box-title">Parcourir par genre </h2>
+         <div class="box-container">
+           <div class="box box-1">
+             <a href="./genreFps.html" class="box_name">FPS</a>
             </div>
-            <div class="card card-2">
-              <a href="./genreGestion.html" class="card_name">Gestion</a>
+            <div class="box box-2">
+              <a href="./genreGestion.html" class="box_name">Gestion</a>
             </div>
-            <div class="card card-3">
-              <a href="./genreHorror.html" class="card_name">Horreur</a>
+            <div class="box box-3">
+              <a href="./genreHorror.html" class="box_name">Horreur</a>
             </div>
-            <div class="card card-4">
-              <a href="./genreIndépendant.html" class="card_name">Indépendant</a>
+            <div class="box box-4">
+              <a href="./genreIndépendant.html" class="box_name">Indépendant</a>
             </div>
-            <div class="card card-5">
-              <a href="./genreMmo.html" class="card_name">Mmorpg</a>
+            <div class="box box-5">
+              <a href="./genreMmo.html" class="box_name">Mmorpg</a>
       </div>
-      <div class="card card-6">
-        <a href="./genreMoba.html" class="card_name">Moba</a>
+      <div class="box box-6">
+        <a href="./genreMoba.html" class="box_name">Moba</a>
       </div>
-      <div class="card card-7">
-        <a href="./genrePlateforme.html" class="card_name">Plateforme</a>
+      <div class="box box-7">
+        <a href="./genrePlateforme.html" class="box_name">Plateforme</a>
       </div>
-      <div class="card card-8">
-        <a href="./genreRpg.html" class="card_name">Rpg</a>
+      <div class="box box-8">
+        <a href="./genreRpg.html" class="box_name">Rpg</a>
       </div>
-      <div class="card card-9">
-        <a href="./genreSimulation.html" class="card_name">Simulation</a>
+      <div class="box box-9">
+        <a href="./genreSimulation.html" class="box_name">Simulation</a>
       </div>
-      <div class="card card-10">
-        <a href="./genreSport.html" class="card_name">Sport</a>
+      <div class="box box-10">
+        <a href="./genreSport.html" class="box_name">Sport</a>
       </div>
-      <div class="card card-11">
-        <a href="./genreStrategie.html" class="card_name">Strategie</a>
+      <div class="box box-11">
+        <a href="./genreStrategie.html" class="box_name">Strategie</a>
       </div>
     </div>
   </section>         
@@ -339,7 +325,11 @@
 
 
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

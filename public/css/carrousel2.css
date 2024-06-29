@@ -30,7 +30,7 @@
   }
   
   .card.custom-card {
-    width: 150px; /* Set the desired width for the card */
+   
     margin: 0; /* Remove margin for tighter spacing */
     border: none; /* Remove border around cards */
     background-color: transparent; /* Remove background color */
@@ -44,6 +44,40 @@
     border-radius: 8px; /* Remove any border radius */
     box-shadow: 10px 5px 10px black;
   }
+
+.carousel-title{
+  margin-top: 2em;
+  padding-left: 1rem;
+}
+
+.carousel-description{
+  margin-bottom: 3em;
+  padding-left: 1em;
+}
+
+
+  .carousel-control-container{
+    font-size: 24px;
+     padding: 8px 16px;
+  }
   
+  .carousel-control-prev{
+    width: 50px;
+    height: 225px;
+    align-self: center; /* Aligner le bouton précédent à gauche */
+     background-color: black;
+  }
+  
+.carousel-control-next{
+  width: 50px;
+  height: 225px;
+ align-self: center; /* Aligner le bouton suivant à droite */
+  background-color: black;
+  
+  
+}
 
-
+.carousel-control-next-icon{
+  color: white;
+ 
+}

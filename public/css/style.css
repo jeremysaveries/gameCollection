@@ -166,23 +166,23 @@ body {
 }
 
 
-.card-title{
+.box-title{
   padding-left: 1em;
-  padding-top: 2em;
+  padding-top: 3em;
 
 }
 
-.card-container {
+.box-container {
     
     grid-template-columns: repeat(3, 100px);
     display: grid;
     grid-template-rows: repeat(2, 100px);
     row-gap: 15px;
     column-gap: 60px;
-    padding-right: 1em;
+    padding-left: 1em;
 }
   
-  .card {
+  .box {
     height: 109px;
     width: 150px;
     position: relative;
@@ -194,7 +194,7 @@ body {
   }
 
   
-  .card_name {
+  .box_name {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -209,7 +209,7 @@ body {
 
 
 
-  .card::before {
+  .box::before {
     content: "";
     position: absolute;
     top: 0;
@@ -219,42 +219,42 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Fond noir avec une opacité de 50% */
     z-index: 1;
   }
-  .card-content p {
+  .box-content p {
     margin: 0;
     font-size: 14px;
   }
 
-  .card-1 { background-image: url('/public/img/genre/fps.jpg');
+  .box-1 { background-image: url('/public/img/genre/fps.jpg');
     
  }
-  .card-2 { background-image: url('/public/img/genre/gestion.jpeg');
+  .box-2 { background-image: url('/public/img/genre/gestion.jpeg');
     
 }
-  .card-3 { background-image: url('/public/img/genre/horror.jpg'); 
+  .box-3 { background-image: url('/public/img/genre/horror.jpg'); 
    
 }
-  .card-4 { background-image: url('/public/img/genre/inde.jpeg'); 
+  .box-4 { background-image: url('/public/img/genre/inde.jpeg'); 
     
 }
-  .card-5 { background-image: url('/public/img/genre/mmo.jpg'); 
+  .box-5 { background-image: url('/public/img/genre/mmo.jpg'); 
    
 }
-  .card-6 { background-image: url('/public/img/genre/moba.jpeg'); 
+  .box-6 { background-image: url('/public/img/genre/moba.jpeg'); 
    
 }
-  .card-7 { background-image: url('/public/img/genre/plateforme.jpg'); 
+  .box-7 { background-image: url('/public/img/genre/plateforme.jpg'); 
    
 }
-  .card-8 { background-image: url('/public/img/genre/rpg.jpg'); 
+  .box-8 { background-image: url('/public/img/genre/rpg.jpg'); 
    
 }
-  .card-9 { background-image: url('/public/img/genre/simulation.jpg');
+  .box-9 { background-image: url('/public/img/genre/simulation.jpg');
    
 }
-  .card-10 { background-image: url('/public/img/genre/sport.jpg');
+  .box-10 { background-image: url('/public/img/genre/sport.jpg');
     
 }
-  .card-11 { background-image: url('/public/img/genre/str.jpg'); 
+  .box-11 { background-image: url('/public/img/genre/str.jpg'); 
 
 }
 footer{
