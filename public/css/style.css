@@ -101,6 +101,10 @@ body {
   font-size: 1rem;
 }
 
+.login__item__conexion :hover a {
+  text-decoration: none;
+}
+
 .login__item__conexion {
   color: white;
   text-decoration: none;
