@@ -25,7 +25,7 @@
             <a href="/home.html">
                 <img class="img__titre" src="./public/img/logo game collection.png" alt="game collection">
 
-                <div class="menu-toggle">
+                <div class="menu-toggle" id="menu-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -33,7 +33,7 @@
 
             </a>
             <ul id="menu-deroulant"class="nav-links">
-                <li><a href="#">Jeux par consoles <i class="fa-regular fa-chevron-down"></i></a>
+                <li><a href="#">Jeux par consoles <i class="fa-solid fa-chevron-down"></i></a>
                    
                     
                     
@@ -44,7 +44,7 @@
                         <li><a href="/consoles.html">Xbox One Series</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Genres<i class="fa-regular fa-chevron-down"></i></a>
+                <li><a href="#">Genres<i class="fa-solid fa-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">FPS</a></li>
                         <li><a href="#">Gestion</a></li>
@@ -61,9 +61,10 @@
                 </li>
                 <div class="login">
                     <a class="login__item__connexion" href="">Se connecter</a>
-                    <a class="login__item__inscription" href="">S'inscrire</a>
+                    <a class="login__item__inscription" href="inscription.html">S'inscrire</a>
                 </div>
                 <div class="search_barre">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <input class="style-searchbarre" type="search" placeholder="Rechercher des titres">
                 </div>
             </ul>
@@ -95,7 +96,7 @@
 
                 </ul>
                 <div class="header_middle_button">
-                    <a class="header_middle_button_insc" href="">S'inscrire Gratuitement</a>
+                    <a class="header_middle_button_insc" href="inscription.html">S'inscrire Gratuitement</a>
                 </div>
             </div>
         </div>
@@ -105,15 +106,18 @@
 <main class="main_container">
     <section>
 
-        <h2 class="carousel-title">Prochainement</h2>
+        <h2 class="carousel-title">Prochainement</h2> 
+        
         <p class="carousel-description">Jeux attendus cette année</p>
         <div class="slick-slider">
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 1"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 2"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 3"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 4"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 5"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 6"></div>
+            <a href="gameproposition.html">
+                <div><img src="public/img/jackette/nouveauté/assasin.jpeg" src alt="Image 1"></div>
+                 </a>
+            <div><img src="public/img/jackette/nouveauté/black_myth_wukong_de.jpg" alt="Image 2"></div>
+            <div><img src="public/img/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b.jpg" alt="Image 3"></div>
+            <div><img src="public/img/jackette/nouveauté/tale.jpg" alt="Image 4"></div>
+            <div><img src="public/img/jackette/nouveauté/téléchargement.jpeg" alt="Image 5"></div>
+            <div><img src="public/img/jackette/game-fav/71d4d17edcd49703a5ea446cc0e588e6.jpg" alt="Image 6"></div>
 
         </div>
       
@@ -125,12 +129,12 @@
         <h2 class="carousel-title">Bientôt disponible</h2>
         <p class="carousel-description">Jeux attendus ce mois</p>
         <div class="slick-slider">
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 1"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 2"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 3"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 4"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 5"></div>
-            <div><img src="https://via.placeholder.com/150x225" alt="Image 6"></div>
+            <div><img src="public/img/jackette/game-month/1717426922-7028-jaquette-avant.jpg" alt="Image 1"></div>
+            <div><img src="public/img/jackette/game-month/dlc elden.jpeg" alt="Image 2"></div>
+            <div><img src="public/img/jackette/game-month/star wars.jpeg" alt="Image 3"></div>
+            <div><img src="public/img/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b.jpg" alt="Image 4"></div>
+            <div><img src="public/img/jackette/nouveauté/téléchargement.jpeg" alt="Image 5"></div>
+            <div><img src="public/img/jackette/nouveauté/black_myth_wukong_de.jpg" alt="Image 6"></div>
 
         </div>
       
@@ -186,9 +190,11 @@
         </div>
     </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="js/carrousel.js"></script>  
+<script src="js/carrousel.js"></script> 
+<script src="js/toggleMenu.js"></script> 
 <script src="https://kit.fontawesome.com/8f3c8555b0.js" crossorigin="anonymous"></script>
 </body>
 </html>
