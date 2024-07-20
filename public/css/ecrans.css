@@ -1,0 +1,129 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background: #333;
+    color: #fff;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links ul {
+    display: none;
+    position: absolute;
+    background: #444;
+    list-style: none;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+  }
+  
+  .nav-links li:hover > ul {
+    display: block;
+  }
+  
+ 
+  
+ 
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left:19em
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  
+  @media (max-width: 500px) {
+    .menu-toggle {
+      display: flex;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    .nav-links.show {
+      display: flex;
+    }
+    .nav-links li {
+      margin: 10px 0;
+    }
+
+    .img__titre{
+        height: 5em;
+    }
+    .login__item__inscription{
+        padding: 0 !important;
+        ;
+    }
+    .login__item__conexion{
+        padding: 0 !important;
+    }
+    .header_middle_title{
+        font-size: small;
+        text-align: center;
+    }
+    .header_middle_list{
+        font-size: small;
+        text-align: center;
+    }
+
+   
+    .img-couv{
+        display: none;
+    }
+   
+    .header_middle_button{
+        padding-left:5em
+    
+    }
+
+
+
+
+
+    .header_middle_button_insc{
+    height: 30px;
+    width: 160px;
+    display: block;
+    font-size: small;
+    padding: 5px;
+    padding-left: 1em;
+    
+    }
+  }
+  

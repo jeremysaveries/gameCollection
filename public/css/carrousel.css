@@ -1,0 +1,54 @@
+.slick-slider {
+    width: 80%;
+    margin: 0 auto;
+}
+.slick-slide {
+    margin: 0;/* Espacement entre les images */
+    height: 250px;
+}
+.slick-slide img {
+    width: 150px; /* Largeur 100% pour remplir le conteneur */
+    height: 225px; /* Hauteur automatique pour conserver les proportions */
+    
+    object-fit: cover; /* Ensure images cover the card without distortion */
+    display: block; 
+    border-radius: 8px; 
+    box-shadow: 10px 5px 10px black;
+}
+.slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond */
+    border: none; /* Pas de bordure */
+    width: 50px; /* Largeur des boutons */
+    height: 50px; /* Hauteur des boutons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centrage vertical */
+    color: white; /* Couleur des icônes */
+    font-size: 24px; /* Taille des icônes */
+    z-index: 1; /* Assurez-vous qu'ils sont au-dessus des images */
+    visibility: visible;
+}
+.slick-prev {
+    left: -50px; /* Position du bouton précédent */
+}
+.slick-next {
+    right: -50px; /* Position du bouton suivant */
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 20px;
+    color: white;
+    content: '';
+}
+.slick-prev i, .slick-next i {
+    font-size: 20px;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .slick-prev, .slick-next {
+        
+    }
+}
