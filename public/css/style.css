@@ -15,8 +15,16 @@ body {
 
 
 
+.nav-link{
+  color: white;
+}
+.nav-item .dropdown {
+  padding-right: 2em,!important;
+}
 
-
+.collapse .navbar-collapse{
+  padding-left: 2em;
+}
 
 #menu-deroulant, #menu-deroulant ul {
   padding: 0;
@@ -92,12 +100,11 @@ body {
   justify-content: space-between;
 }
 
-i{
-  margin-left: 1em;
-}
+
 
 .search_barre {
   font-size: 1rem;
+  padding-left: 1em;
 }
 
 .style-searchbarre {
@@ -116,21 +123,22 @@ i{
 .login {
   font-size: 1rem;
   order: 2;
-    padding-left: 1em;
+    padding-left: 10em;
 }
 
 .login__item__conexion :hover a {
   text-decoration: none;
 }
 
-.login__item__conexion {
-  color: white;
+.login__item__connexion {
+  color: white !important; /* Correction de la syntaxe ici */
   text-decoration: none;
   margin: 1em;
 }
 
+/* Pour les éléments ayant la classe .login__item__inscription */
 .login__item__inscription {
-  color: white;
+  color: white !important; /* Correction de la syntaxe ici */
   text-decoration: none;
   margin: 1em;
 }
@@ -246,39 +254,18 @@ i{
     font-size: 14px;
   }
 
-  .box-1 { background-image: url('/public/img/genre/fps.jpg');
-    
- }
-  .box-2 { background-image: url('/public/img/genre/gestion.jpeg');
-    
-}
-  .box-3 { background-image: url('/public/img/genre/horror.jpg'); 
-   
-}
-  .box-4 { background-image: url('/public/img/genre/inde.jpeg'); 
-    
-}
-  .box-5 { background-image: url('/public/img/genre/mmo.jpg'); 
-   
-}
-  .box-6 { background-image: url('/public/img/genre/moba.jpeg'); 
-   
-}
-  .box-7 { background-image: url('/public/img/genre/plateforme.jpg'); 
-   
-}
-  .box-8 { background-image: url('/public/img/genre/rpg.jpg'); 
-   
-}
-  .box-9 { background-image: url('/public/img/genre/simulation.jpg');
-   
-}
-  .box-10 { background-image: url('/public/img/genre/sport.jpg');
-    
-}
-  .box-11 { background-image: url('/public/img/genre/str.jpg'); 
+  .box-1 { background-image: url('/public/img/genre/fps.jpg'); }
+  .box-2 { background-image: url('/public/img/genre/gestion.jpeg'); }
+  .box-3 { background-image: url('/public/img/genre/horror.jpg'); }
+  .box-4 { background-image: url('/public/img/genre/inde.jpeg'); }
+  .box-5 { background-image: url('/public/img/genre/mmo.jpg'); }
+  .box-6 { background-image: url('/public/img/genre/moba.jpeg'); }
+  .box-7 { background-image: url('/public/img/genre/plateforme.jpg'); }
+  .box-8 { background-image: url('/public/img/genre/rpg.jpg'); }
+  .box-9 { background-image: url('/public/img/genre/simulation.jpg'); }
+  .box-10 { background-image: url('/public/img/genre/sport.jpg'); }
+  .box-11 { background-image: url('/public/img/genre/str.jpg'); }
 
-}
 footer{
   padding-top: 2em;
 }

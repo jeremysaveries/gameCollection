@@ -18,11 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 500,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerPadding: '0', // Réduit l'espacement à gauche et à droite des images centrales
+                    centerPadding:'1',
+                   // Réduit l'espacement à gauche et à droite des images centrales
                     arrows: true
                 }
             }

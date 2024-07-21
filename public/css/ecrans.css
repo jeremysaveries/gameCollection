@@ -9,103 +9,148 @@ body {
   color: #fff;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.nav-links {
-  list-style: none;
+/* Style pour le bouton du menu burger */
+.navbar-toggler {
+  border: none;
+  background: transparent;
   padding: 0;
-  margin: 0;
-  display: flex;
 }
 
-.nav-links li {
-  margin-left: 20px;
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;  /* Largeur de l'icône */
+  height: 3px;  /* Épaisseur des barres */
+  background-color: #fff;  /* Couleur des barres */
   position: relative;
+  transition: background-color 0.3s ease;
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav-links ul {
-  display: none;
-  position: absolute;
-  background: #444;
-  list-style: none;
-  padding: 10px;
-  top: 100%;
-  left: 0;
-}
-
-.nav-links li:hover > ul {
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 30px;  /* Largeur des barres */
+  height: 3px;  /* Épaisseur des barres */
+  background-color: #fff;  /* Couleur des barres */
   display: block;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
 }
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  margin-left: 19em;
+.navbar-toggler-icon::before {
+  top: -8px;  /* Position de la barre supérieure */
 }
 
-.menu-toggle .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 4px 0;
+.navbar-toggler-icon::after {
+  top: 8px;  /* Position de la barre inférieure */
 }
+
+/* Style pour le menu burger lorsqu'il est actif */
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
 
 @media (max-width: 500px) {
+
+
+  .img-couv{
+    display: none;
+  }
   .menu-toggle {
-      display: flex;
-  }
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-  }
-  .nav-links.show {
-      display: flex;
-  }
-  .nav-links li {
-      margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto; /* Alignement à droite */
+    background: #333; /* Fond sombre pour le contraste */
+    padding: 10px;
+    border-radius: 5px; /* Effet arrondi */
+    
   }
 
-  .img__titre {
-      height: 5em;
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Couleur des barres */
+    margin: 4px 0;
   }
-  .login__item__inscription {
-      padding: 0 !important;
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #333; /* Fond sombre pour le menu */
   }
-  .login__item__conexion {
-      padding: 0 !important;
+
+  .nav-links.show {
+    display: flex;
   }
-  .header_middle_title {
-      font-size: small;
-      text-align: center;
+
+  .nav-links li {
+    margin: 10px 0;
   }
-  .header_middle_list {
-      font-size: small;
-      text-align: center;
+
+  .nav-links a {
+    color: #fff; /* Couleur des liens */
+    padding: 10px;
+    text-align: center; /* Centrage du texte */
+    display: block; /* Affichage en bloc pour cliquabilité */
   }
-  .img-couv {
-      display: none;
+ 
+ 
+  .navbar-toggler {
+    border: none;
+    background: transparent;
   }
-  .header_middle_button {
-      padding-left: 5em;
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,...'); /* SVG ou autre image pour l'icône du burger */
   }
-  .header_middle_button_insc {
-      height: 30px;
-      width: 160px;
-      display: block;
-      font-size: small;
-      padding: 5px;
-      padding-left: 1em;
+
+  .bi{
+    background-color: white;
+  }
+  .login{
+    font-size: 1rem;
+    order: 2;
+    padding-left: 2em;
+  }
+
+  .header_middle_title{
+
+    font-size: smaller;
+    padding-bottom: 1em;
+        font-weight: bold;
+  }
+  .header_middle_list{
+    font-size: small;
+  }
+
+  .header_middle_button_insc{
+    display: block;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  .description_title{
+    font-weight: bold;
+  }
+.description_info{
+
+  color: black;
+}
+  .box-container{
+    grid-template-columns: repeat(2, 100px);
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    row-gap: 15px;
+    column-gap: 60px;
+    padding-left: 1em;
   }
 }
+
