@@ -122,6 +122,8 @@ body {
     padding-left: 2em;
   }
 
+ 
+    
   .header_middle_title{
 
     font-size: smaller;
@@ -152,5 +154,7 @@ body {
     column-gap: 60px;
     padding-left: 1em;
   }
+
+
 }
 
