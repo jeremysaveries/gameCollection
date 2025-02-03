@@ -1,32 +1,19 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
+  import { Router, Route, Link } from 'svelte-routing';
+  import Home from './pages/home.svelte';
+  import Signup from './pages/register.svelte';
 </script>
 
-<main>
-  <div>
-    <a href="https://vite.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
+<Router>
+  <nav>
+    <Link to="/">Accueil</Link>
+    <Link to="/signup">Inscription</Link>
+  </nav>
 
-  <div class="card">
-    <Counter />
-  </div>
+  <Route path="/" component={Home} />
+  <Route path="/signup" component={Signup} />
+</Router>
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
-</main>
 
 <style>
   .logo {

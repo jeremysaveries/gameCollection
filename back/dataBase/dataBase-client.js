@@ -8,5 +8,17 @@ const sequelize = new Sequelize(process.env.PG_URL, {
     underscored: true,
   },
 });
+console.log("PG_URL =", process.env.PG_URL);
+
+async function testConnection() {
+  try {
+    await sequelize.authenticate();
+    console.log("✅ Connexion à la base de données réussie !");
+  } catch (error) {
+    console.error("❌ Erreur de connexion à la base de données :", error);
+  }
+}
+
+testConnection();
 
 export default sequelize;
