@@ -1,103 +1,66 @@
 <script>
-  import Header from '../partials/header.svelte'
+  import FormElement from "../utils/FormElement.svelte";
+
+  let email = "";
+  let confirmEmail = "";
+  let pseudo = "";
+  let password = "";
+  let confirmPassword = "";
 </script>
 
-<Header showLogo={true} style="display: none; width: 300px; height: 300px; :margin-bottom: 10px;" />
+<header>
+  <div class="headerContainer">
+    <img src="../img/logo.png" alt="logo">
+  </div>
+</header>
 
-<main>
+<main class="mainContainer">
   <div class="formInscription">
-    <h1 class="titleInscription">inscription</h1>
-    <div class="formMail">
-      <form action="/inscription" method="post">
-        <p>* Votre adresse mail :</p>
-        <label for="email"></label>
-        <input type="email" id="email" name="email" required placeholder="email">
+    <h1 class="titleInscription">Inscription</h1>
+    <form action="/inscription" method="post">
+      
+      <p>* Votre adresse mail :</p>
+      <FormElement type="email" label="Email" name="email" placeholder="Entrez votre email" bind:value={email} />
+      <FormElement type="email" label="Confirmer l'email" name="confirmEmail" placeholder="Retapez votre email" bind:value={confirmEmail} />
 
-        <label for="confirmEmail"></label>
-        <input type="email" id="confirmEmail" name="confirmEmail" required placeholder="retaper votre email">
-    </div>
+      <p>* Votre pseudo :</p>
+      <FormElement type="text" label="Pseudo" name="pseudo" placeholder="Choisissez un pseudo" bind:value={pseudo} />
 
-    <div class="formPseudo">
-      <p>* Votre pseudo</p>
-      <label for="pseudo"></label>
-      <input type="text" id="pseudo" name="pseudo" required placeholder="pseudo">
-    </div>
+      <p>* Votre mot de passe :</p>
+      <FormElement type="password" label="Mot de passe" name="password" placeholder="Entrez votre mot de passe" bind:value={password} />
+      <FormElement type="password" label="Confirmer le mot de passe" name="confirmPassword" placeholder="Retapez votre mot de passe" bind:value={confirmPassword} />
 
-    <div class="formPassword">
-      <p>* Votre mot de passe</p>
-      <label for="password"></label>
-      <input type="password" id="password" name="password" required placeholder="mot de passe">
-
-      <label for="confirmPassword"></label>
-      <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="retaper votre mot de passe">
-    </div>
-
-    <button type="submit">S'inscrire</button>
-      <form>
+      <FormElement type="submit" buttonText="S'inscrire" />
+    </form>
   </div>
 </main>
 
 <style>
   @media (max-width: 500px) {
-    :global(body) {
-      background-color: #272727 !important; /* Gris foncé */
-      margin: 0;
-      padding: 0;
-    }
-
-    p{
-      color: white;
-    }
-
-   .titleInscription {
-    color: white;
-    margin: 0;
-    padding: 0;
-   }
-
-  
-    .formInscription {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      
-    }
-
-  .formMail, .formPseudo, .formPassword {
-    margin-bottom: 20px;
-  }
-  .header {
-  width: 100px; /* Ajuste la largeur de l'image */
-  height: auto; /* Maintient les proportions de l'image */
+body {
+  background-color: #272727 !important;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
-  label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
+.formInscription{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre tout horizontalement */
+  justify-content: center; /* Centre verticalement */
   
-  input {
-    width: 306px;
-    height: 45px;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #00B0FC;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 13px;
-    cursor: pointer;
-    width: 221px;
-    height:  98px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+}
+.titleInscription{
+  color: white;
+  font-family: roboto;
+}
+
+* p{
+  color: white;
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: bold;
+}
 }
 </style>

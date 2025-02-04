@@ -2,16 +2,23 @@
   import { Router, Route, Link } from 'svelte-routing';
   import Home from './pages/home.svelte';
   import Signup from './pages/register.svelte';
+  import Login from './pages/login.svelte';
+ 
 </script>
 
 <Router>
   <nav>
     <Link to="/">Accueil</Link>
     <Link to="/signup">Inscription</Link>
+    <Link to="/login">Connexion</Link>
+    
   </nav>
 
   <Route path="/" component={Home} />
   <Route path="/signup" component={Signup} />
+  <Route path="/login" component={Login} />
+
+ 
 </Router>
 
 
