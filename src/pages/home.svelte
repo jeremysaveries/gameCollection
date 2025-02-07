@@ -60,7 +60,13 @@
                     <span class="descriptionInfo"> Restez à jour sur les nouvelles sorties et mises à jour importantes de vos jeux préférés.</span>
                 </li>
             </ul>
-            <FormElement type="submit" buttonText="S'inscrire" name="submitRegister" />
+             <div class="boutonContainer">
+
+                 <a href="nouvelle-page.html" class="bouton">s'inscrire</a>
+                </div>
+
+
+         
         </div>
 
         <div class="carouselContainer">
@@ -115,6 +121,7 @@
             display: flex;
           flex-direction: column;
           gap: 1em;
+          padding-bottom: 1em;
           
         }
 
@@ -146,16 +153,31 @@
             font-weight: bold;
            
         }
-        .submitRegister{
-          display: flex;
-        flex-direction: column;
-        margin-bottom: 15px;
-        align-items: center;
-        }
+        .bouton {
+    display: inline-block; /* Évite que le bouton prenne toute la largeur */
+    padding: 10px 20px; /* Espace autour du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Couleur du texte */
+    border-radius: 5px; /* Coins arrondis */
+    width:100px; /* Laisse la largeur s’adapter au contenu */
+    text-align: center; /* Centre le texte si besoin */
+    background-color: #1e90ff;
+  }
+
+  .bouton:hover {
+    background-color: #007f96; /* Effet au survol */
+  }
+
+    .boutonContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
       .titleCarousel{
         font-family: roboto;
         font-weight: bold;
         text-align: center;
+        padding-top: 1em;
 
       }
 

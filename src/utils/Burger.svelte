@@ -19,6 +19,7 @@
 	  top: 20px; /* Ajuste la position du bouton hamburger si nécessaire */
 	  right: 20px; /* Le bouton est à droite */
 	  z-index: 10; /* Le bouton hamburger reste au-dessus du menu */
+	  opacity: 1 !important;
 	}
   
 	/* Le menu qui se glisse depuis le haut */
@@ -33,6 +34,7 @@
 	  transform: translateY(-100%); /* Menu caché par défaut */
 	  transition: transform 0.3s ease-in-out; /* Animation du glissement */
 	  z-index: 5; /* Le menu est derrière le bouton hamburger */
+	  mix-blend-mode: normal !important;
 	}
   
 	/* Lorsque le menu est ouvert */
@@ -49,6 +51,7 @@
 	  font-weight: bolder;
 	  padding: 1rem;
 	  display: block;
+	  opacity: 1 !important;
 	
 	}
   
