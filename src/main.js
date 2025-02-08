@@ -1,9 +1,8 @@
 import { mount } from "svelte";
 import "./app.css";
-import Accueil from "../src/pages/home.svelte"; // Remplacer App par Accueil
+import App from "./App.svelte"; // On monte l'application entière
 
-const app = mount(Accueil, {
-  // Monter le composant Accueil
+const app = mount(App, {
   target: document.getElementById("app"),
 });
 

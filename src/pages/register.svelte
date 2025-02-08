@@ -44,6 +44,11 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .formInscription{
   display: flex;
   flex-direction: column;
