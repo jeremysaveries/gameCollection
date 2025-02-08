@@ -1,7 +1,6 @@
 <script>
     import Burger from "../utils/Burger.svelte";
     import Carrousel from "../utils/carrousel.svelte";
-    import FormElement from "../utils/FormElement.svelte";
     import Card from "../utils/CardHome.svelte";
 
 

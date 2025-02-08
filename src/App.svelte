@@ -3,28 +3,26 @@
   import Home from './pages/home.svelte';
   import Signup from './pages/register.svelte';
   import Login from './pages/login.svelte';
-  import ProfilUser from './pages/profilUser.svelte';
- 
+  import Profiluser from './pages/profiluser.svelte';
+  import Menu from './utils/Menu.svelte';
+  export let url = "";
 </script>
 
-<Router>
+<Router {url}>
   <nav>
     <Link to="/">Accueil</Link>
     <Link to="/signup">Inscription</Link>
     <Link to="/login">Connexion</Link>
-    <Link to= "/profilUser">profil</Link>
-    
+    <Link to="/profiluser">Profil</Link>
   </nav>
-
-  <Route path="/" component={Home} />
+<div>
+  
+  <Route path="/" component={Home} exact />
   <Route path="/signup" component={Signup} />
   <Route path="/login" component={Login} />
-  <Route path="/profilUser" component={ProfilUser} />
-
- 
+  <Route path="/profiluser" component={Profiluser} />
+</div>
 </Router>
-
-<main>  <Home /></main>
 
 <style>
   .logo {

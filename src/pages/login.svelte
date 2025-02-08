@@ -40,7 +40,7 @@
   
   <style>
       @media (max-width: 500px) {
-    body {
+    .body {
       background-color: #272727 !important;
       margin: 0;
       padding: 0;
@@ -56,6 +56,11 @@
   
 }
 
+.headerContainer {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
     
     .titleConnexion{
         color: white;
