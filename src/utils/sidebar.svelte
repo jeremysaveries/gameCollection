@@ -11,6 +11,9 @@
   <!-- Bouton pour fermer -->
   <button class="close-btn" on:click={closeSidebar}>❌</button>
 
+
+
+  
   <!-- Contenu dynamique -->
   <slot></slot>
 </div>
@@ -52,8 +55,8 @@
 
   /* Style du bouton de fermeture */
   .close-btn {
-      background: red;
-      color: white;
+      
+      color: black;
       border: none;
       padding: 10px;
       cursor: pointer;

@@ -6,12 +6,17 @@
     let picture = "/default-profilPicture.jpg";
     let TextProfil = "Profil";
     let Pseudo = "Pseudo";
+    import AddPictureBanniere from "../utils/addPictureBanniere.svelte";
+    import ProfileImageUpload from "../utils/ProfileImageUpload.svelte";
     import Sidebar from "../utils/sidebar.svelte";
     import Card from "../utils/cardGames.svelte";
+    import SettingProfil from "../utils/settingProfil.svelte";
     export let link;
 
     let isSidebarOpen1 = false; // État pour la première sidebar
     let isSidebarOpen2 = false; // État pour la deuxième sidebar
+    let isSidebarOpen3 = false;
+    let isSidebarOpen4 = false;
     let lists = [];
     let listName = "";
 
@@ -35,6 +40,26 @@
         isSidebarOpen2 = false;
     }
 
+    // Fonction pour ouvrir la deuxième sidebar
+    function openSidebar3() {
+        isSidebarOpen3 = true;
+    }
+
+    // Fonction pour fermer la deuxième sidebar
+    function closeSidebar3() {
+        isSidebarOpen3 = false;
+    }
+
+    function openSidebar4() {
+        isSidebarOpen4 = true;
+    }
+
+    // Fonction pour fermer la deuxième sidebar
+    function closeSidebar4() {
+        isSidebarOpen4 = false;
+    }
+
+
     // Fonction pour créer une liste
     function createList() {
         if (listName.trim()) {
@@ -55,10 +80,14 @@
         if (
             !event.target.closest('.sidebar') &&
             !event.target.closest('.buttonAddList') &&
-            !event.target.closest('.openGameSidebarre')
+            !event.target.closest('.openGameSidebarre') &&
+            !event.target.closest('.buttonEditProfil')&&
+            !event.target.closest('.settingOpenProfil')
         ) {
             closeSidebar1();
             closeSidebar2();
+            closeSidebar3();
+            closeSidebar4();
         }
     }
 
@@ -72,18 +101,61 @@
             window.removeEventListener('click', handleOutsideClick);
         };
     });
+
+    let bannerImages = [
+        { id: 1, url: '/img/jackette/game-month/finalfantasy.jpg', name: 'finalfantasy' },
+        { id: 2, url: '/img/jackette/game-month/dlcelden.jpeg', name: 'dlc eldenRing' },
+        { id: 3, url: '/img/jackette/game-month/starwars.jpeg', name: 'starwars' }
+    ];
+
+    let selectedBannerImage = ''; // Image sélectionnée pour la bannière
+    let showBannerDropdown = false; // Contrôle l'affichage de la liste des images de la bannière
+
+    // Sélectionner une image pour la bannière
+    function selectBannerImage(image) {
+        selectedBannerImage = image.url; // Mettre à jour l'image de la bannière
+        showBannerDropdown = false; // Fermer la liste des images
+    }
+
+    // Afficher ou masquer la liste déroulante pour la bannière
+    function toggleBannerDropdown() {
+        showBannerDropdown = !showBannerDropdown;
+    }
 </script>
 
 <main class="mainContainer">
-    <Banniere image={image} altText={altText} />
-    <img src="../img/gta.jpg" alt="banniere" />
+    <div class="bannerContainer">
+        <Banniere 
+          imageUrl={selectedBannerImage || "../img/gta.jpg"} 
+          altText="banniere" 
+        />
+    </div>
+    
 
     <div class="profilContainer">
         <ProfilPicture picture={picture} TextProfil={TextProfil} />
         <img class="profilPicture" src="../img/profil.jpg" alt="photo de profil" />
         <p class="ProfilPseudo">jeremy</p>
-        <a href="/" class='bouton'>modifier le profil</a>
+        <button class='buttonEditProfil' on:click={openSidebar3}>modifier le profil</button>
     </div>
+
+  
+
+
+
+    <Sidebar isOpen={isSidebarOpen3} closeSidebar={closeSidebar3}>
+        <h2 class="titleSidebar3">modifier le profil </h2>
+       <ProfileImageUpload/>
+        <AddPictureBanniere />
+    </Sidebar>
+
+
+    <div class="settingProfilContainer">
+        <button class='settingOpenProfil' on:click={openSidebar4}><i class="fa-solid fa-gear"></i></button>
+    </div>
+    <Sidebar isOpen={isSidebarOpen4} closeSidebar={closeSidebar4}>
+    <SettingProfil />
+    </Sidebar>
 
     <div class="gameCounter">
         <h1 class='titleCount'>nombre de jeux</h1>
@@ -92,25 +164,21 @@
 
     <h1 class="listTitle">Listes</h1>
 
-    <!-- Bouton pour ouvrir la première sidebar -->
     <div class="OpensidebarContainer">
         <button class="buttonAddList" on:click={openSidebar1}><p> <i class="fa-solid fa-plus"></i> Ajouter une liste </p></button>
 
-        <!-- Utilisation de Sidebar avec les bonnes props -->
         <Sidebar isOpen={isSidebarOpen1} closeSidebar={closeSidebar1}>
             <h2>Nom</h2>
             <input class="buttonCreateList" type="text" bind:value={listName} placeholder="Nom de la liste" />
-            <button on:click={createList}>Créer</button> <!-- Créer la liste -->
+            <button on:click={createList}>Créer</button>
         </Sidebar>
     </div>
 
     <div class="listGame">
         <div class="openGameSidebarre">
             <h2 class="nameList">Mes jeux</h2>
-            <!-- Bouton (icône) pour ouvrir la deuxième sidebar -->
             <i class="fa-solid fa-arrow-right" on:click={openSidebar2} style="cursor: pointer;"></i>
 
-            <!-- Sidebar réutilisable -->
             <Sidebar isOpen={isSidebarOpen2} closeSidebar={closeSidebar2}>
                 <h2>Contenu de la sidebar</h2>
                 <p>Tu peux mettre ici ce que tu veux.</p>
@@ -137,6 +205,65 @@
             left: 105px;
             top: 140px;
             color: white;
+        }
+
+        .profilUdapteTitle {
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 1em;
+            border-bottom: solid 1px grey;
+        }
+
+        .uploadProfil {
+         display: flex;
+         flex-direction: column;
+         padding-top: 1em;
+         
+         }
+
+         .titleEditProfil {
+            text-align: center;
+            padding-bottom: 2em;
+        }
+ 
+         .titleSidebar3{
+            text-align: center;
+            padding-bottom: 1em;
+          border-bottom: solid 1px grey;
+         }
+         .banner-upload-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1em;
+           
+        }
+        .banner-upload-label{
+            border-top: solid 1px grey;
+            display: inline-flex;
+            flex-direction: row-reverse;
+             justify-content: flex-end;
+            gap: 1em;
+            padding-top: 1em;
+        }
+            
+        .bannerImgList {
+            list-style: none;
+
+        }
+
+
+
+
+        .buttonEditProfil{
+            position: absolute;
+            top: 22px;
+            display: contents;
+            background-color: #00A19D;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         .bouton {
@@ -177,7 +304,6 @@
             font-size: 1em;
         }
 
-        /* Styles pour la Sidebar */
         .sidebar {
             position: fixed;
             top: 0;
@@ -198,7 +324,6 @@
             transform: translateX(0);
         }
 
-        /* Overlay si utilisé */
         .overlay {
             position: fixed;
             top: 0;
@@ -213,10 +338,12 @@
             border: none;
             border-bottom: solid 1px black;
         }
+
         .listTitle {
             padding-top: 1em;
             padding-left: 1em;
         }
+
         .OpensidebarContainer {
             display: flex;
             flex-direction: row;
@@ -246,18 +373,13 @@
         .cardContainer {
             display: flex;
             flex-direction: row;
-            gap: 1em;
-            justify-content: center;
-            padding-top: 1em;
+            align-items: center;
         }
 
         .openGameSidebarre {
             display: flex;
-            align-items: center;
-            width: 100%;
-            padding-left: 1em;
-            padding-top: 1em;
-            gap: 17em;
+            justify-content: space-between;
+            margin: 20px;
         }
     }
 </style>
